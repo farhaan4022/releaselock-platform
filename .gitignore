@@ -28,3 +28,6 @@ evidence/private/
 .vscode/
 .idea/
 .DS_Store
+
+# Local Terraform backend config
+infra/backend.hcl
