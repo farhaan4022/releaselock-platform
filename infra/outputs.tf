@@ -51,3 +51,18 @@ output "secret_arns" {
     app          = aws_secretsmanager_secret.app.arn
   }
 }
+
+output "ecr_repositories" {
+  value = {
+    app   = aws_ecr_repository.app.repository_url
+    proxy = aws_ecr_repository.proxy.repository_url
+  }
+}
+
+output "runtime_roles" {
+  value = {
+    execution   = aws_iam_role.ecs_execution.arn
+    app_task    = aws_iam_role.app_task.arn
+    maintenance = aws_iam_role.maintenance_execution.arn
+  }
+}
