@@ -1,0 +1,30 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+*.auto.tfvars
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets / local environment
+.env
+.env.*
+*.pem
+*.key
+*.crt
+credentials*
+secrets*
+
+# Evidence that may contain sensitive account data
+evidence/private/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
