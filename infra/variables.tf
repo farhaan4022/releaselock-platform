@@ -21,3 +21,8 @@ variable "vpc_cidr" {
   type        = string
   default     = "10.60.0.0/16"
 }
+
+variable "allowed_cidr" {
+  description = "CIDR allowed to access the load balancer"
+  type        = string
+}
